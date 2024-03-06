@@ -3,7 +3,7 @@ import './index.css';
 import { App } from './App';
 import { legacy_createStore as createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { initValue } from './const/constRUS';
+import { INIT_VALUE } from './const/constRUS';
 
 export type state = {
     valueInput: string;
@@ -14,7 +14,7 @@ export type state = {
 const defaulState = {
     valueInput: '',
     valueInputResult: '',
-    valueSelect: Object.keys(initValue.Valute)[0],
+    valueSelect: Object.keys(INIT_VALUE.Valute)[0],
 };
 const reducer = (state: state = defaulState, action: any) => {
     switch (action.type) {

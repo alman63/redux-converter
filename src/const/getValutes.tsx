@@ -1,4 +1,4 @@
-import { initValue } from './constRUS';
+import { INIT_VALUE } from './constRUS';
 
 const getApiData = async () => {
     try {
@@ -9,4 +9,4 @@ const getApiData = async () => {
     }
 };
 
-export const valutes = { ...initValue.Valute, ...(await getApiData()).Valute };
+export const valutes = { ...INIT_VALUE.Valute, ...(await getApiData()).Valute };
